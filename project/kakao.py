@@ -1,6 +1,7 @@
 import os
 import json
 import requests
+import beepy
 
 def sendToMeMessage(text):
     header = {"Authorization": 'Bearer ' + KAKAO_TOKEN}
@@ -20,5 +21,6 @@ def sendToMeMessage(text):
 text = "Hello, This is KaKao Message Test!!("+os.path.basename(__file__).replace(".py", ")")
 
 KAKAO_TOKEN = "4OjcW58dPmbo7YUpQGmT0IZrhMHF_OUOriWoQgo9dZsAAAF7OsQo-w"
+beepy.beep(sound="ping")
 
 print(sendToMeMessage(text).text)

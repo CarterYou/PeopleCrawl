@@ -13,6 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from openpyxl import load_workbook
 import requests
 from bs4 import BeautifulSoup as bs
+import beepy
 
 options = webdriver.ChromeOptions()
 
@@ -99,8 +100,10 @@ if __name__ == "__main__":
             for i in cl:
                 if i[2] == '디지털시스템설계' and i[0]=='신청':
                     print(i)
+                    beepy.beep(sound="ping")
                 elif i[2] == '글로벌문화와 소통' and i[0]=='신청':
                     print(i)
+                    beepy.beep(sound="ping")
                 else:
                     continue
 
