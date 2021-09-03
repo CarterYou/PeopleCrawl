@@ -98,7 +98,7 @@ if __name__ == "__main__":
                 cl.append([cl_seat, cl_id, cl_name, cl_prof, cl_all_time, cl_my_time, cl_when])
 
             for i in cl:
-                if i[2] == '디지털시스템설계' and i[0]=='신청':
+                if i[2] == '확률및랜덤변수' and i[0]=='신청':
                     print(i)
                     beepy.beep(sound="ping")
                 elif i[2] == '글로벌문화와 소통' and i[0]=='신청':
@@ -107,7 +107,7 @@ if __name__ == "__main__":
                 else:
                     continue
 
-            time.sleep(random.randrange(3,10))
+            time.sleep(random.randrange(5,10))
         #에러
         else:
             print('unexpected error')
